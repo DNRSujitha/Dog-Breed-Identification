@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# TensorFlow - Model files
+*.h5
+*.keras
+*.weights.h5
+models/*.h5
+models/*.keras
+models/*.weights.h5
+!models/class_indices.pkl
+!models/class_indices_complete.pkl
+!models/class_indices_final.pkl
+
+# Flask
+instance/
+.webassets-cache
+.env
+.flaskenv
+
+# Uploads
+static/uploads/
+uploads/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Kaggle
+kaggle.json
+
+# Colab
+*.ipynb_checkpoints/
+
+# Dataset
+dataset/

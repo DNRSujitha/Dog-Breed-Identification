@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Breed Classifier - AI Powered</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">🐕 Dog Breed AI</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#predict">Predict</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Identify Any Dog Breed Instantly</h1>
+            <p>Using advanced AI and deep learning technology</p>
+            <a href="#predict" class="btn">Try It Now</a>
+        </div>
+    </section>
+
+    <!-- Prediction Section -->
+    <section id="predict" class="hero2">
+        <div class="hero-box">
+            <h1>Upload Your Dog's Photo</h1>
+            <p>Our AI will identify the breed with high accuracy</p>
+            <div class="upload-box">
+                <input type="file" id="imageInput" accept="image/*">
+                <button class="scan-btn" onclick="predictBreed()">Analyze Breed</button>
+            </div>
+            
+            <!-- Image Preview -->
+            <div id="imagePreviewContainer" style="display: none; margin-top: 20px;">
+                <img id="imagePreview" style="max-width: 300px; border-radius: 10px; border: 3px solid white;">
+            </div>
+            
+            <!-- Loading Indicator -->
+            <div id="loading" style="display: none; margin-top: 20px;">
+                <div class="spinner"></div>
+                <p>Analyzing your image...</p>
+            </div>
+            
+            <!-- Result -->
+            <div id="result"></div>
+            
+            <!-- Prediction Details -->
+            <div id="predictionDetails" style="display: none; margin-top: 30px;">
+                <h3>Top 3 Predictions:</h3>
+                <div id="topPredictions" class="top-predictions"></div>
+                <div class="confidence-meter">
+                    <div id="confidenceValue"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Dog Gallery Section  -->
+     <section id="gallery" class="gallery-section">
+        <h2>Meet Our Favorite Breeds</h2>
+        <div class="simple-gallery">
+            <!-- Beagle -->
+            <div class="gallery-item">
+                <img src="https://1.bp.blogspot.com/-Wn169GwcdTE/Xs8I--OcaTI/AAAAAAAAhP0/XPT_LZ1rN94a763Fxi13wZ0zKWSYd7KEACLcBGAsYHQ/s1600/Beagle_Breed_Profile_puppy_with_floppy_ears_running_on_the_grass_towards_the_left.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Beagle">
+            </div>
+            <!-- Golden Retriever -->
+            <div class="gallery-item">
+                <img src="https://goldenhearts.co/wp-content/uploads/2020/04/golden-retriever-164221_1280-1024x998.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Golden Retriever">
+            </div>
+            <!-- Poodle -->
+            <div class="gallery-item">
+                <img src="https://thehappypuppysite.com/wp-content/uploads/2018/01/Toy-Poodle-HP-long.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Poodle">
+            </div>
+        </div>
+    </section
+
+    <!-- Tips Section -->
+    <section id="tips" class="tips">
+        <h2>Dog Care Tips</h2>
+        <div class="tips-grid">
+            <div class="tip-card">
+                <h3>🏃 Exercise Needs</h3>
+                <p>Different breeds have different exercise requirements. Know your dog's needs!</p>
+            </div>
+            <div class="tip-card">
+                <h3>🍖 Nutrition</h3>
+                <p>Feed your dog breed-appropriate food for optimal health.</p>
+            </div>
+            <div class="tip-card">
+                <h3>✂️ Grooming</h3>
+                <p>Regular grooming keeps your dog healthy and happy.</p>
+            </div>
+            <div class="tip-card">
+                <h3>🏥 Health Checkups</h3>
+                <p>Regular vet visits are essential for your furry friend.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Get in Touch</h2>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for your message! We\'ll get back to you soon.'); this.reset();">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section (No Follow Us) -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>🐕 Dog Breed AI</h3>
+                <p>Identifying dog breeds with advanced artificial intelligence.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#predict">Predict</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#tips">Tips</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dog Breed AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
