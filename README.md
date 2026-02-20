@@ -65,7 +65,7 @@ Open http://localhost:5000 in your browser
 **Option 1: Quick Retraining**
 ```sh
 
-python retrain_model.py'
+python retrain_model.py
 ```
 **Option 2: Full Training**
 ```sh
