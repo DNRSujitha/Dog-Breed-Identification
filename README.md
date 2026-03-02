@@ -80,7 +80,8 @@ python rebuild_model.py
 ## Output:
 ![My App Screenshot](https://github.com/user-attachments/assets/c795d078-6058-4d8e-9535-ff9a5b1eb309)
 
-
+## Demo Video:
+https://drive.google.com/file/d/1zzLFqCGg7aKiMOHv9XAKUBy3GoN8fjQ0/view?usp=drive_link
 ## Dataset
 The model was trained on 10 dog breeds:
 
